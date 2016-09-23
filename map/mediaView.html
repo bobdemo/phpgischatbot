@@ -1,0 +1,27 @@
+<div id="mediaType">
+    <img src='images/photo.png' alt='photo' width=45 height=45 onclick='mediaViewManager.openPhoto()'>
+    <img src='images/video.png' alt='video' width=45 height=45 onclick='mediaViewManager.openVideo()'>
+    <img src='images/audio.png' alt='audio' width=45 height=45 onclick='mediaViewManager.openAudio()'>
+    <img src='images/text.png' alt='text' width=45 height=45 onclick='mediaViewManager.openText()'>
+</div>
+
+<div id='pageContent'>
+    <div id="comment">
+    </div>
+    <img id='previousMedia' src='images/previousMedia.png' name='navMedia' onclick='mediaViewManager.previousMedia()' width='30'>
+    <div id='media'>
+    </div>
+    <img id='nextMedia' src='images/nextMedia.png' name='navMedia' onclick='mediaViewManager.nextMedia()' width='30'>
+    <div id='controls'>
+        <img src='images/start.png' id='play-pause' alt='playpause' onclick='mediaViewManager.playPause()'>
+        <input type='range' id='seek-bar' value='0' onmousedown='mediaViewManager.videoPause()' onmouseup='mediaViewManager.videoPlay()'>
+        <img src='images/mute.png' id='mute' alt='mute' onclick='mediaViewManager.muteUnmute()'>
+        <input type='range' id='volume-bar' min='0' max='1' step='0.1' value='1' onchange='mediaViewManager.changeVolume()'>
+        <img src='images/fullscreen.png' id='fullscreen' alt='resize' onclick='mediaViewManager.toggleFullscreen()'>
+    </div>
+</div>
+<div id="mediaManagement">
+    <img src="images/change.png" id="change" onclick="mediaEditingManager.changeMediaElement()"> 
+    <img src="images/delete.png" id="delete" onclick="mediaEditingManager.requestDeleteMediaElement()"> 
+    <img src="images/move.png" id="move" onclick="mediaEditingManager.requestMoveMediaElement()"> 
+</div>

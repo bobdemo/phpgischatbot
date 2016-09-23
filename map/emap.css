@@ -1,0 +1,379 @@
+html
+{
+    height: 100%; 
+}
+
+body
+{
+    height: calc(100% - 16px);
+}
+
+#map
+{
+    height: 87%;
+    width: 100%;
+}
+
+#info
+{
+    position: fixed;
+    height: calc(13% - 2px);
+    width: calc(98% - 16px);
+    bottom: 8px;
+    border: 1px solid rgba(255,255,255,0.8);
+    z-index: 1000;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgba(255,255,255,0.8);
+    overflow: hidden;
+}
+
+#infoText
+{
+    position: absolute;
+    top: 30px;
+    left: 1%;
+    right: calc(80px + 1%);
+    font-size: 16px;
+}
+
+#nextPoint, #previousPoint
+{ 
+    position: absolute;
+    top: calc(50% - 8px);
+    margin: 0.5%;
+    width: 40px;
+    height: 40px;
+}
+
+#previousPoint
+{
+    right: calc(40px + 1%);
+}
+
+#nextPoint
+{
+    right: 0;
+}
+
+#infoButton
+{
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 40px);
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    height: 30px;
+}
+
+#help
+{
+    position: absolute;
+    display: none;
+    width: calc(100% - 2px);
+    height: 28px;
+    border: 1px solid black;
+    left: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+
+[name = navButton]
+{
+    display: inline;
+}
+
+#closeDirections
+{
+    display: none;
+}
+
+#driveMode
+{
+    display: none;
+}
+
+#page
+{
+    position: fixed;
+    display: none;
+    top: 18%;
+    left: 0%;
+    width: calc(96% - 16px);
+    height: calc(87% - 16px);
+    overflow: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.8);
+    overflow: hidden;
+}
+
+#mediaType
+{
+    position: absolute;
+    width: 96%;
+}
+
+#mediaType > *
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#mediaType > [alt=photo]
+{
+    margin-left: calc(50% - 180px);
+}
+
+#pageContent
+{
+    position: absolute;
+    height: 80%;
+    top: 12%;
+    left: 0px;
+    overflow: overlay;
+    background-color: rgba(230, 230, 250, 0.7);
+}
+
+#previousMedia, #nextMedia, #controls
+{
+    display: none;
+}
+
+#previousMedia
+{
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 15px);
+    left: 0%;
+}
+
+#nextMedia
+{
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 0%;
+}
+
+#controls
+{
+    display: none;
+    z-index: 1004;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 2px);
+    height: 30px;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid grey;
+}
+
+#controls > *
+{
+    display: inline;
+    position: relative;
+    margin-left: calc(9.8% - 23.5px);
+    margin-right: calc(9.8% - 23.5px);
+    width: 45px;
+    height: 25px;
+    top: 1.5px;
+}
+
+#media
+{
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+}
+
+#media > *
+{
+    text-align: center;
+}
+
+#comment
+{
+    position: absolute;
+    color: black;
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    text-align: center;
+}
+
+#mediaManagement
+{
+    display: none;
+    position: absolute;
+    padding-left: calc(50% - 113px);
+    bottom: 0px;
+    left: 0px;
+}
+
+#mediaManagement > *
+{
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 480px) 
+{  
+    #infoButton
+    {
+        top: 3px;
+        height: 25px;
+    }
+    
+    #help
+    {
+        top: 3px;
+        height: 23px;
+    }
+
+    
+    #map
+    {
+        height: 84%;
+    }
+
+    #info
+    {
+        height: 14%;
+    }
+    
+    #previousPoint
+    {
+        left: 0;
+    }
+
+    #nextPoint
+    {
+        right: 0;
+    }
+    
+    #help 
+    {
+        font-size: 14px;
+    }
+    
+    #infoText
+    {
+        left: calc(40px + 1%);
+        right: calc(40px + 1%);
+        top: 30px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    #page
+    {
+        top: 18%;
+        width: calc(90% - 16px);
+        height: calc(81% - 16px);
+        font-size: 12px;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    #page > img
+    {
+        padding-left: calc(11.5% - 22.5px);
+        padding-right: calc(11.5% - 22.5px);
+    }
+    
+    #pageContent
+    {
+        top: 18%;
+    }
+    
+    #media
+    {
+        top: 30px;
+    }
+    
+    #mediaType
+    {
+        width: calc(100% - 32px);
+        left: 5%;
+    }
+    
+    #mediaType > *
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }   
+    
+    #mediaType > img[alt = photo]
+    {
+        margin-left: calc(50% - 142.5px);
+    }
+    
+    #mediaManagement
+    {
+        width: 90%;
+        padding-left: calc(50% - 105px);
+    }
+    
+    #comment
+    {
+        font-size: 14px;
+        height: 35px;
+    }
+    
+    #mediaManagement
+    {
+        bottom: 10px;
+    }
+}
+
+.leaflet-control-layers-owner-toggle {
+	background-image: url(lib/images/avatar0.png);
+	width: 36px;
+	height: 36px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        display: block;
+}
+
+
+.leaflet-retina .leaflet-control-layers-owner-toggle {
+	background-image: url(images/avatar-x2.png);
+	background-size: 26px 26px;
+	}
+.leaflet-touch .leaflet-control-layers-owner-toggle {
+	width: 44px;
+	height: 44px;
+}
+
+.leaflet-control-layers-expanded .leaflet-control-layers-owner-toggle {
+	display: none;
+	}
+
+.leaflet-touch .leaflet-bar a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	}
+
+/* zoom control */
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+	font: bold 18px 'Lucida Console', Monaco, monospace;
+	text-indent: 1px;
+	}
+.leaflet-control-zoom-out {
+	font-size: 20px;
+	}
+
+.leaflet-touch .leaflet-control-zoom-in {
+	font-size: 22px;
+	}
+.leaflet-touch .leaflet-control-zoom-out {
+	font-size: 24px;
+	}

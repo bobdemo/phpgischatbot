@@ -1,0 +1,41 @@
+{
+    "name": "elaaa92/GisChat",
+    "type": "project",
+    "description": "PHP telegram bot for gis",
+    "keywords": ["telegram", "bot", "api", "gis"],
+    "license": "MIT",
+    "homepage": "https://github.com/elaaa92/TGGisChat2016",
+    "authors": [
+        {
+            "name": "Elisa Pau",
+            "email": "eladomus07@gmail.com",
+            "homepage": "https://github.com/elaaa92",
+            "role": "Developer"
+        },
+        {
+            "name": "Roberto Demontis",
+            "email": "demontis@crs4.it",
+            "homepage": "https://github.com/bobdemos",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "ext-pdo": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GisAgentTB\\TelegramBot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "squizlabs/php_codesniffer": "~2.5"
+    }
+}

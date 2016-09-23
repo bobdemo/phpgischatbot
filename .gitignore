@@ -1,0 +1,20 @@
+# IDE & System Related Files #
+.buildpath
+.project
+.settings
+.DS_Store
+/nbproject
+*~
+
+# Composer
+vendor/
+build/
+
+# phpDocumentor Logs #
+phpdoc-*
+
+# OSX #
+._*
+.Spotlight-V100
+.Trashes
+

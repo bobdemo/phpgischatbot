@@ -1,0 +1,16 @@
+Sicurezza:
+- richieste esterne solo da server telegram vedere su conf apache2
+- bot token da nascondere / chat_id non pubblico
+- nome webhook.php da cambiare 
+
+Owner data access
+- data ingresso chat e data uscita dalla chat 
+
+Label
+- classe LanguageManager ( costanti di testo  )
+array ( name => 'ADDED_TRACK',  en => "aggiunto track",  it=> "added track" )
+
+Offline Mode e date
+- aggiungere il controllo date ad ogni ricezione messaggio  ( se offline da più di 10 sec -> set inline ) 
+
+

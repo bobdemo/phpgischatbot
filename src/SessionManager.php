@@ -1,5 +1,5 @@
 <?php
-
+ 
 namespace GisAgentTB\TelegramBot;
 
 class SessionManager 

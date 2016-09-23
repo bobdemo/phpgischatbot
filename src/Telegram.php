@@ -7,7 +7,7 @@ use GisAgentTB\TelegramBot\Entities\InlineQuery;
 use GisAgentTB\TelegramBot\Entities\ChosenInlineResult;
 use GisAgentTB\TelegramBot\Entities\CallbackQuery;
 use GisAgentTB\TelegramBot\Exception\BotException;
-
+ 
 class Telegram 
 { 
      /**

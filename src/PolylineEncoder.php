@@ -6,7 +6,7 @@
  * 
  */
 class PolylineEncoder {
-    
+     
     private $points;
     private $encoded;
     

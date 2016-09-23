@@ -7,7 +7,7 @@ $DB_NAME = "the_bot_db_name";
 $DB_USER = "the_bot_db_user";
 $DB_PASSWORD = "the_bot_db_password";
 
-
+  
 
 //1xx Azione normale
 //2xx Azione illecita

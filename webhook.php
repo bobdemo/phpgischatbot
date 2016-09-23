@@ -13,7 +13,7 @@ use GisAgentTB\TelegramBot\Telegram;
 /// andrebbe anche aggiunto la gestione Exception
 
 // read incoming info and grab the chatID
-
+ 
 
 $content = file_get_contents("php://input");
  

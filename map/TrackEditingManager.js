@@ -31,7 +31,8 @@ function TrackEditingManager (key, track, lang)
     this.key = key;
     this.track = track;
     this.lang = lang;
-    
+    this.mapzen_api_key = "api_key";
+            
     this.labels =  
     {
         "en" : [ "Waypoint n.", "Remove", "Add previous", "Add next", "Move line point"],
@@ -214,7 +215,7 @@ function TrackEditingManager (key, track, lang)
             var latlons = [{lat: from.lat, lon: from.lng},{lat: to.lat, lon: to.lng}];
             var data = JSON.stringify({locations: latlons, costing: type, 
                         directions_options: {units: 'meters', language: this.mapper.lang}, id: id});
-            var url = "https://valhalla.mapzen.com/route?json=" + data + "&api_key=valhalla-i5Du3Hk"; 
+            var url = "https://valhalla.mapzen.com/route?json=" + data + "&api_key=" + mapzen_api_key; 
 	    reqwest
             (
                 {

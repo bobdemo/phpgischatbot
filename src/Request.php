@@ -9,7 +9,7 @@ use GisAgentTB\TelegramBot\Logger;
 class Request 
 {
    private static $telegram;
-
+   private $mapzen_api_key = "your_api_key";
    /**
      * Initialize
      *
@@ -159,7 +159,7 @@ class Request
             $locations[ "locations" ] = [ [ "lat" => $latlon[0], "lon" => $latlon[1] ],[ "lat" => $latlon[2], "lon" => $latlon[3] ] ];
             $locations[ "costing" ] = "bicycle";
             $locations[ "directions_options" ] = array ( "units" => "meters" );
-            $url = "https://valhalla.mapzen.com/route?id=gischatbot&api_key=valhalla-i5Du3Hk&json=" . json_encode($locations);
+            $url = "https://valhalla.mapzen.com/route?id=gischatbot&api_key=" + $mapzen_api_key + "&json=" . json_encode($locations);
             $pathJson = file_get_contents( $url );
             $pathObj = json_decode($pathJson);
             foreach ($pathObj->trip->legs as $line) {

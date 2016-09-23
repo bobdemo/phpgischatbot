@@ -1,5 +1,14 @@
 <?php 
 
+//// BOT keys 
+$BOT_TOKEN = "the_bot_token";
+$BOT_NAME = "the_bot_name";
+$DB_NAME = "the_bot_db_name";
+$DB_USER = "the_bot_db_user";
+$DB_PASSWORD = "the_bot_db_password";
+
+
+
 //1xx Azione normale
 //2xx Azione illecita
 //3xx Errore interno
@@ -11,7 +20,9 @@
 //4 stop
 //5 content
 //6 validate
-   
+
+
+
 define ('SET_LANGUAGE_REQUEST', 100);
 define ('SET_LANGUAGE_CHOICE_EN', 101);
 define ('SET_LANGUAGE_CHOICE_IT', 102);

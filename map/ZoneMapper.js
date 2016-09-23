@@ -3,6 +3,7 @@ mapper.initMap();
 
 function ZoneMapper (id, lang)          //Costruttore oggetto ZoneMapper
 {
+    this.mapzen_api_key = "the_apy_key";
     this.pathsLoaded=0;
     this.paths = [];
     this.pathsIds = [];
@@ -23,7 +24,6 @@ function ZoneMapper (id, lang)          //Costruttore oggetto ZoneMapper
         this.lang = 'it';
     else
         this.lang = 'en';
-        
     this.labels =  
     {
         "en" : [ "Map of ", "Pathway","of","Area not selected", "This is the start point of this path: ", 
@@ -678,7 +678,7 @@ function ZoneMapper (id, lang)          //Costruttore oggetto ZoneMapper
         var data = JSON.stringify({locations: latlons, costing: this.directionsType, 
             directions_options: {units: 'meters', language: mapper.lang},
             id: 'gischatbot'});
-        var url = "https://valhalla.mapzen.com/route?json=" + data + "&api_key=valhalla-i5Du3Hk"; 
+        var url = "https://valhalla.mapzen.com/route?json=" + data + "&api_key=" + this.mapzen_api_key; 
         console.log("External request: " + url);
         
         reqwest

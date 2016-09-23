@@ -238,6 +238,7 @@ function TrackMap (role, waypoints, track, medialist, lang)
             "Elemento", "di", "Data:", "Tipo:", "Percorso:", "Proprietario:", "Percorso vuoto", "Nome"]
     };
     this.getLabel = function(i) { return this.labels[this.lang][i];};
+    
     /// ICONE PER I MARKER
     this.createIcon = function (url)
     {

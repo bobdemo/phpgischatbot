@@ -52,6 +52,10 @@ The bot manages a set of Comands and Inline Queries that can be see with the bot
 @GisChatBot search number - Show a list of area in a radius of specified kilometers 
 
 ### Maps
+https://github.com/bobdemo/phpgischatbot/blob/master/1b.png
+
+
+
 
 ## License
 Please see the [LICENSE](LICENSE.md) included in this repository for a full copy of the MIT license,

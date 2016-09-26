@@ -42,6 +42,7 @@ The bot manages a set of Comands and Inline Queries that can be see with the bot
 /confirm - Confirm your current trip, it must be closed
 /help - Show full command description
 /about - Show bot information
+
 ### Inline Query
 @GisChatBot trips - Show all nearest public or owned trips
 @GisChatBot trips keyword - Show all trips found using the given word
@@ -49,6 +50,7 @@ The bot manages a set of Comands and Inline Queries that can be see with the bot
 @GisChatBot search - Show all nearest areas
 @GisChatBot search area name - Show a list of area found with the given word
 @GisChatBot search number - Show a list of area in a radius of specified kilometers 
+
 ### Maps
 
 ## License
@@ -56,4 +58,14 @@ Please see the [LICENSE](LICENSE.md) included in this repository for a full copy
 which this project is licensed under.
 
 ## Credits
-Credit list in [CREDITS](CREDITS)
+
+###  Elisa Pau,
+ - email: eladomus07@gmail.com,
+ - homepage: https://github.com/elaaa92,
+ - role: Maintainer and Developer
+
+###  Roberto Demontis,
+ - email: demontis@crs4.it,
+ - homepage: https://github.com/bobdemo,
+ - role: Maintainer and Developer
+

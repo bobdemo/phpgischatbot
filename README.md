@@ -17,7 +17,7 @@ For example the edit of paths that connect waypoints of a trip is automatized an
 The @GisChatBot is available from a Telegram Client in desktop or mobile devices.   
 The maps managed in the application are showed using the browser of the device 
 At the moment the web services integrated in the maps are Google and OpenStreetMap both for base map tiles and Mapzen for directions services but in the future can be easily added some other useful services (e.g elevation service).
-The bot deployed on the server gisepi.crs4.it at CRS4 integrate data and furnish directions services for pathways of the area "Gutturru Mannu" in Sardinia (Italy) ()
+The bot deployed on the server gisepi.crs4.it at CRS4 integrate data and furnish directions services for pathways of the area "Gutturru Mannu" in Sardinia (Italy) 
 
 ## Instructions
 The source code is located in two folder: the "src" folder with the php implementation of the bot; the "map" folder with the impelmentation of maps (javascript + html + css) and services (php).
@@ -29,32 +29,32 @@ The main classes are: Telegram (Telegram.php) that manages updates; DB (DB.php) 
 The bot manages a set of Comands and Inline Queries that can be see with the bot comand /help. 
 
 ### Commands 
-/language - Set your language
-/begin - Start tracking your trip
-/setprivate - Set your current trip private
-/setpublic - Set your current trip public
-/setname - Set your current trip name
-/setname name - Set your current trip name
-/settag - Set a tag for your last registered position
-/settag tagname - Set a tag(generic, danger or poi) for your last registered position
-/show - Show your current trip
-/end - Close your current trip
-/confirm - Confirm your current trip, it must be closed
-/help - Show full command description
-/about - Show bot information
+- /language - Set your language
+- /begin - Start tracking your trip
+- /setprivate - Set your current trip private
+- /setpublic - Set your current trip public
+- /setname - Set your current trip name
+- /setname name - Set your current trip name
+- /settag - Set a tag for your last registered position
+- /settag tagname - Set a tag(generic, danger or poi) for your last registered position
+- /show - Show your current trip
+- /end - Close your current trip
+- /confirm - Confirm your current trip, it must be closed
+- /help - Show full command description
+- /about - Show bot information
 
 ### Inline Query
-@GisChatBot trips - Show all nearest public or owned trips
-@GisChatBot trips keyword - Show all trips found using the given word
-@GisChatBot trips number - Show all public or owned trips in a radius of specified kilometers
-@GisChatBot search - Show all nearest areas
-@GisChatBot search area name - Show a list of area found with the given word
-@GisChatBot search number - Show a list of area in a radius of specified kilometers 
+- @GisChatBot trips - Show all nearest public or owned trips
+- @GisChatBot trips keyword - Show all trips found using the given word
+- @GisChatBot trips number - Show all public or owned trips in a radius of specified kilometers
+- @GisChatBot search - Show all nearest areas
+- @GisChatBot search area name - Show a list of area found with the given word
+- @GisChatBot search number - Show a list of area in a radius of specified kilometers 
 
 ### Maps
+The maps are of two type: the "Area" map and the "Track" Map.
 
-
-![1a](https://github.com/bobdemo/phpgischatbot/blob/master/5a_.png)
+- The "Area" map shows information about paths for trekking/cycling/hiking and other outdoor recreational activity. At the moment the bot contains only few informations for the "Gutturru Mannu" area in the soutwest of Sardinia (Italy). ![Area Map1](https://github.com/bobdemo/phpgischatbot/blob/master/5a_.png) ![Area Map2](https://github.com/bobdemo/phpgischatbot/blob/master/5b_.png). The map contains a control that permits to calculate directions using the Mapzen service "turn by turn" or a dedicated service based on the pathways network of the area  ![Area Map3](https://github.com/bobdemo/phpgischatbot/blob/master/6a_.png) ![Area Map4](https://github.com/bobdemo/phpgischatbot/blob/master/6b_.png)
 
 
 

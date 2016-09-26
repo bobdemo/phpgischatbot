@@ -56,8 +56,11 @@ The maps are of two type: the "Area" map and the "Track" Map.
 
 * The "Area" map shows information about paths for trekking/cycling/hiking and other outdoor recreational activity. 
  At the moment the bot contains only few informations for the "Gutturru Mannu" area in the soutwest of Sardinia (Italy). 
+ 
  ![Area Map1](https://github.com/bobdemo/phpgischatbot/blob/master/5a_.png) ![Area Map2](https://github.com/bobdemo/phpgischatbot/blob/master/5b_.png) 
+ 
  The map contains a control that permits to calculate directions using the Mapzen service "turn by turn" or a dedicated service based on the pathways network of the area.
+ 
  ![Area Map3](https://github.com/bobdemo/phpgischatbot/blob/master/6a_.png) ![Area Map4](https://github.com/bobdemo/phpgischatbot/blob/master/6b_.png)
 
 

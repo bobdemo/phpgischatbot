@@ -63,7 +63,11 @@ The maps are of two type: the "Area" map and the "Track" Map.
  
  ![Area Map3](https://github.com/bobdemo/phpgischatbot/blob/master/6a_.png) ![Area Map4](https://github.com/bobdemo/phpgischatbot/blob/master/6b_.png)
 
+* The "Track" map shows information about a chat track created by one or more users. The map permits to edit the waypoints and media of the track
 
+ ![Area Map1](https://github.com/bobdemo/phpgischatbot/blob/master/7a_.png) ![Area Map2](https://github.com/bobdemo/phpgischatbot/blob/master/7b_.png) 
+ 
+ ![Area Map3](https://github.com/bobdemo/phpgischatbot/blob/master/8a_.png) ![Area Map4](https://github.com/bobdemo/phpgischatbot/blob/master/8b_.png)
 
 ## License
 Please see the [LICENSE](LICENSE.md) included in this repository for a full copy of the MIT license,

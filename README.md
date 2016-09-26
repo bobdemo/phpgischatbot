@@ -54,11 +54,8 @@ The bot manages a set of Comands and Inline Queries that can be see with the bot
 ### Maps
 
 
-[(https://github.com/bobdemo/phpgischatbot/blob/master/1a.png)]
+![1a](https://github.com/bobdemo/phpgischatbot/blob/master/1a.png)
 
-[[https://github.com/bobdemo/phpgischatbot/blob/master/1a.png]]
-
-((https://github.com/bobdemo/phpgischatbot/blob/master/1a.png))
 
 
 ## License
